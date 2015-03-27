@@ -36,6 +36,7 @@
 <role rolename="fedoraAdmin"/>
 <role rolename="fedoraUser"/>
 <user username="admin" password="admin" roles="fedoraAdmin"/>
+<user username="user" password="user" roles="fedoraUser"/>
 
 <!-- <role rolename="admin"/> -->
 <!-- <role rolename="admin-gui"/> -->
