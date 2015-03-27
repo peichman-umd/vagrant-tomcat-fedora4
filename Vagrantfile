@@ -11,6 +11,7 @@ Vagrant.configure(2) do |config|
 
   # forward 8080 (Tomcat)
   config.vm.network "forwarded_port", guest: 8080, host: 8080
+  config.vm.network "forwarded_port", guest: 80, host: 8000
 
   # location of the Fedora 4 repo
   config.vm.synced_folder "/apps/git/fcrepo4", "/apps/git/fcrepo4"

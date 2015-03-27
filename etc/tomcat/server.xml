@@ -69,6 +69,7 @@
     -->
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
+               proxyPort="8000"
                redirectPort="8443" />
     <!-- A "Connector" using the shared thread pool-->
     <!--
@@ -124,7 +125,7 @@
           connectionURL="ldaps://directory.umd.edu"
           commonRole="fedoraUser"
           userPattern="uid={0},ou=people,dc=umd,dc=edu"
-          userRoleName="ou"/>
+          />
       </Realm>
 
       <Host name="localhost"  appBase="webapps"
